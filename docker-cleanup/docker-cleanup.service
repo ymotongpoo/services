@@ -1,0 +1,9 @@
+[Unit]
+Description = Docker periodical cleanup
+
+[Service]
+ExecStart=/home/yoshifumi/personal/services/docker-cleanup/docker-cleanup.sh
+User=yoshifumi
+
+[Install]
+WantedBy=multi-user.target

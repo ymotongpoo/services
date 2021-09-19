@@ -1,0 +1,9 @@
+[Unit]
+Description = Call docker-cleanup service once per day
+
+[Timer]
+OnUnitActiveSec = 1day
+Unit = docker-cleanup.service
+
+[Install]
+WantedBy = multi-user.target
