@@ -1,0 +1,9 @@
+[Unit]
+Description = Delete unaccessed old files
+
+[Service]
+ExecStart=/home/yoshifumi/personal/services/delete-files/delete-files.sh
+User=yoshifumi
+
+[Install]
+WantedBy=multi-user.target
