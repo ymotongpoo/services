@@ -17,3 +17,8 @@
 set -ex
 
 /usr/bin/env python3 $(dirname $(realpath $0))/delete-files.py
+
+TRASH_EMPTY=$(which trash-empty)
+if [ -z "$TRASH_EMPTY" ]; then
+    $TRASH_EMPTY
+fi
